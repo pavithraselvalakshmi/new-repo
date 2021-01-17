@@ -1,0 +1,42 @@
+<div class="mainCSS">
+
+    <div class="centerBet">
+        {{opposingBet}}
+    </div>
+<div  class="completePage">
+
+
+    <div *ngFor="let player of listOfPlayers">
+        <div class="card">
+            <div class="playerDetail">
+                <div class="imageS">
+                    <img [src]="player.Avatar">
+                </div>
+                <div class="detailsNL">
+                    <div class="nameS"> {{player.Name}}</div>
+                    <div class="LevelS"> Level {{player.Level}}</div>
+                </div>
+            </div>
+            <div class="playerBettingInfo">
+                <div class="info"> 
+                    <div>
+                        Bet:{{player.Bet}}
+                    </div>
+                    <div>
+                        Price:{{player.Price}}
+                    </div>
+                </div>
+                <div class="winning">
+                    Win:{{player.Win}}
+                </div>
+            </div>
+            <div class="status"  [ngStyle]="{'background-color':player.isWinning==true ? 'green' : 'red' }">
+                <div *ngIf="player.isWinning"> Winner </div>
+                <div *ngIf="!player.isWinning"> Lose </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>

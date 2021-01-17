@@ -1,0 +1,86 @@
+<div class="mainPage">
+
+    <div class="search">
+      <div>
+        <h2 class="header">
+          Select Playing 9
+        </h2><br/>
+        <input type="text" class="searchBox" [(ngModel)]="searchData" placeholder="Search" />
+    
+      </div>
+    </div>
+    
+    
+    <div class="playersList">
+      <div>
+          <table id="customers">
+              <tr>
+                  <th> Select </th>
+                  <th *ngFor="let header of heading">{{header}}</th>
+                </tr>
+              <tr *ngFor="let player of (players | searchByName : searchData | paginate : config) ">
+                  <td>
+                      <input type="checkbox" [(ngModel)]="player.isSelected" (change)="getSelected()">
+                  </td>
+                  <td *ngFor="let column of heading">
+                    <span  *ngIf="!column.includes(avatar)">
+                    {{player[column]}}
+                  </span>
+                  <span *ngIf="column.includes(avatar)">
+                    <img class="imageTable" [src]="player.Avatar">
+                  </span>
+                </td>
+              </tr>
+            </table>
+            
+      </div>
+    <div class="paginationEle">
+      <pagination-controls 
+      [maxSize]="maxSize"
+      [directionLinks]="directionLinks"
+      [autoHide]="autoHide"
+      [responsive]="responsive"
+      [previousLabel]="labels.previousLabel"
+      [nextLabel]="labels.nextLabel"
+      (pageChange)="onPageChange($event)">
+    </pagination-controls>
+    </div>
+    </div>
+    </div>
+    
+    <div class="sidenav">
+        <div>
+
+        </div>
+        <div class="ListHeading">
+          Playing 9
+        </div>
+        <div class="forScroll">
+          <div class="SelectPlayersList" *ngFor="let player of selectedPlayer">
+            <div>
+              <img [src]="player.Avatar">
+            </div>
+             <div class="detailName">
+               <div>{{player.Name}}</div>
+               <div class="downEle">
+                 <div>
+                   Bet:{{player.Bet}}
+               </div>
+               <div>
+                   Win:{{player.Win}}
+               </div>
+             </div>
+             </div>
+             <div class="lastEle">
+               Price:{{player.Price}}
+             </div>
+           </div>
+        </div>
+         
+      
+      <div class="buttonProp">
+        <button class="bttn" [disabled]="!canPlay" routerLink ='/gamepage'>
+          Start
+        </button>
+      </div>
+    </div>

@@ -1,0 +1,99 @@
+.mainCSS{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    background-color: rgb(128, 126, 126);
+    padding-left: 3%;
+   
+}
+.completePage{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.status{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+.completePage > div{
+    margin: 4%;
+}
+  img{
+      width: 100%;
+  }
+  .imageS{
+      padding-left: 2%;
+  }
+
+  .detailsNL{
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .info{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding-left: 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-right: 10%;
+      padding-left: 7%;
+  }
+  .winning{
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 7%;
+  }
+
+  .LevelS{
+    font-size: 50%;
+  }
+
+  .nameS{
+     font-size: 100%;
+  }
+
+.card{
+    display: grid;
+    grid-template-rows: 50% 35% 15%;
+    background-color: #f1f1f1;
+    border: 1px solid brown;
+    height: 40vh;
+    width: 100%;
+    box-shadow: 10px 10px 5px grey;
+  
+}
+
+.playerDetail{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.centerBet{
+    padding-left: 2%;
+    font-size: 1000%;
+    color: darkblue;
+    float: left;
+}
+
+.playerBettingInfo{
+
+   
+    display: grid;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+
+}

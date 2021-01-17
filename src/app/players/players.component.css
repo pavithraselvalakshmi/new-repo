@@ -1,0 +1,153 @@
+.playersList{
+    padding-top: 1%;
+      float: right;
+      width: 100%;
+     
+  }
+  .paginationEle{
+    padding-top: 1%;
+    float: right;
+  }
+  
+  .search{
+    float: right;
+    width: 100%;
+  }
+  
+  .mainPage{
+    
+    float: right;
+    width: 80%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  #heading{
+      width: 100%;   
+  }
+  .imageTable{
+    width:30%
+  }
+  
+  #customers {
+      width: 100%;
+      border-collapse: collapse;
+    } 
+    
+  #customers td {
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+      text-align: center;
+      border-bottom: 1px solid #949494;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 70%;
+      width: 8%;
+    }
+  
+    .paginationEle /deep/ .ngx-pagination .current {
+      background: #949494;
+    }
+  
+    #customers  th {
+      padding-top: 1%;
+      padding-bottom: 1%;
+      border: 6px solid #e0e4e4;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: smaller;
+      text-align: center;
+      background-color: #cbcfcf;
+      ;
+    }
+    
+  .header{
+    color: blue;
+  }
+  .forScroll{
+    height: 50vh;
+    overflow: auto;
+  }
+  
+  .SelectPlayersList{
+    
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns:18% 52% 15%;
+    margin-left: 7%;
+    width: 85%;
+    background-color: #efedfa;
+    margin-top: 5%;
+    border: 0px;
+    font-size: 80%;
+  
+  }
+  
+  .buttonProp{
+    margin: auto;
+    padding-top: 12%;
+    
+  }
+  .bttn{
+    background-color: cornflowerblue;
+    padding: 25% 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    cursor: pointer;
+  }
+  
+  .ListHeading{
+    margin-left: 7%;
+    font-size: small;
+    font-weight: bold;
+    color: #cbcccc;
+  
+  }
+  
+  .downEle{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+   
+  .lastEle{
+    padding: 13px;
+  }
+  img{
+    width: 100%;
+  }
+  
+  .detailName{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding-left: 10px;
+  }
+    .searchBox {
+      
+      width: 27%;
+      font-size: 13px;
+      padding: 12px 20px 12px 10px;
+      border-bottom: 1px solid #949494;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 12px;
+      background-color: #e0e4e4;
+    }
+    
+    
+  #customers tr:hover {background-color: #afb7b8;}
+  
+  
+  .sidenav {
+  
+    display: grid;
+    grid-template-rows: 30% 10% 45% 15%;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #efedfa;
+    overflow-x: hidden;
+  }
+    
+   
